@@ -34,6 +34,9 @@
           <div class="white--text contactLink">
             <a class="white--text" href="contact@demain.media">Contact</a>
           </div>
+          <div class="white--text CGULink">
+            <a class="white--text" href="CGU.com">Conditions générales d'utilisation</a>
+          </div>
         </v-flex>
       </v-layout>
     </v-footer>
@@ -59,7 +62,9 @@ export default {
   flex-direction: row;
 }
 .contactLink {
+  margin-left: 20%;
+}
+.contactCGU {
   margin-left: 80%;
 }
-
 </style>
