@@ -2,20 +2,20 @@
   <main>
      <v-content class="hero">
        <section>
-         <v-parallax :src="heroImg" height="600">
+         <v-parallax :src="heroImg" height="570">
            <v-layout
              column
              align-center
              justify-center
              class="white--text"
            >
-             <img src="../assets/logo-demain.png" alt="Vuetify.js" height="400">
+             <img src="../assets/logo-demain.png" alt="Vuetify.js" height="350">
              <h1 class="white--text mb-2 display-1 text-xs-center">Faisons des idées d'aujourd'hui, les media de demain</h1>
              <v-btn
                class="red lighten-2 mt-6"
                dark
                large
-               to="/jepostule"
+               to="/candidature"
              >
                Je Postule
              </v-btn>
@@ -34,7 +34,7 @@
              <div class="text-xs-center">
                <h2 class="headline">L'INTRAPRENEURIAT</h2>
                <span class="subheading">
-                 Une approche intellectuelle et professionnelle entraînante
+                 Une approche intellectuelle et professionnelle passionnante
                </span>
              </div>
            </v-flex>
@@ -76,8 +76,8 @@
                        <div class="headline text-xs-center">Un succès prouvé</div>
                      </v-card-title>
                      <v-card-text>
-                       En 1978, un as de l'exécution à la créativité débordante est venu s'installer en France avec un Géo à la main.
-                       Il s'agit bien d'Axel Ganz, fondateur de Prisma Media. 40 ans, son projet est encore un succès de plus de 1400 employés et leader de son secteur.
+                       En 1978, un as de l'exécution à la créativité débordante est venu s'installer en France, un Géo à la main.
+                       Il s'agit d'<a class="black--text" link href="https://fr.wikipedia.org/wiki/Axel_Ganz">Axel Ganz</a>, le fondateur de Prisma Media. 40 ans, son projet est encore un succès de plus de 1400 employés et leader de son secteur.
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -88,7 +88,7 @@
        </section>
 
        <section>
-         <v-parallax :src="sectionImg" height="380">
+         <v-parallax :src="sectionImg" height="800">
            <v-layout column align-center justify-center>
              <div class="headline white--text mb-3 text-xs-center">Nous souhaitons vous accompagner dans votre démarche de créativité</div>
              <em>Découvrez notre programme d'accompagnement</em>
@@ -110,7 +110,7 @@
              <v-flex xs12 sm4>
                <v-card class="elevation-0 transparent">
                  <v-card-title primary-title class="layout justify-center">
-                   <div class="headline">Je suis un Employé</div>
+                   <div class="headline">Je suis Employé</div>
                  </v-card-title>
                  <v-card-text>
                    Le programme est ouvert à tous les employés du Groupe Prisma Media et de ses filiales en France et à l'étranger.
@@ -119,7 +119,7 @@
                    class="red lighten-2 mt-4"
                    dark
                    large
-                   href="/pre-made-themes"
+                   to="/candidature"
                  >
                    Je Postule
                  </v-btn>
@@ -128,10 +128,10 @@
              <v-flex xs12 sm4 offset-sm1>
                <v-card class="elevation-0 transparent">
                  <v-card-title primary-title class="layout justify-center">
-                   <div class="headline">Je suis un Freelance</div>
+                   <div class="headline">Je suis Freelance</div>
                  </v-card-title>
                  <v-card-text>
-                   Nous recherchons régulièrement des freelances pour accompagner nos intrapreneurs
+                   Nous recherchons régulièrement des freelances pour accompagner nos intrapreneurs. N'hésitez pas à contacter nos équipes:
                  </v-card-text>
                  <v-list class="transparent">
                    <v-list-tile>
@@ -155,7 +155,9 @@
                        <v-icon class="red--text text--lighten-2">email</v-icon>
                      </v-list-tile-action>
                      <v-list-tile-content>
-                       <v-list-tile-title>freelances@demain.media</v-list-tile-title>
+                       <v-list-tile-title>
+                         <a class="black--text" href="mailto:freelances@demain.media">freelances@demain.media </a>
+                         </v-list-tile-title>
                      </v-list-tile-content>
                    </v-list-tile>
                  </v-list>
@@ -170,7 +172,8 @@
 
 <script>
 import heroImg from '@/assets/philipp.jpg'
-import sectionImg from '@/assets/section.jpeg'
+import sectionImg from '@/assets/hands.jpg'
+//https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Other%20Explore%20Photos/H-P/holi-hands.adapt.945.1.jpg
 
 export default {
   data() {

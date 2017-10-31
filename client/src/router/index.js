@@ -6,7 +6,7 @@ import Signup from './Signup';
 import Example from './Example';
 import Dashboard from './Dashboard';
 import { checkUser } from '@/api/auth';
-import JePostule from './JePostule';
+import Candidature from './Candidature';
 
 Vue.use(Router);
 
@@ -18,8 +18,8 @@ const router = new Router({
       component: Home,
     },
     {
-      path: '/jepostule',
-      component: JePostule,
+      path: '/candidature',
+      component: Candidature,
       meta: {
         requiresAuth: true,
       },

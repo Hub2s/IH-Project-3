@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-toolbar class="grey darken-2" fixed app>
-      <!-- <v-toolbar-title>Demain PM</v-toolbar-title> -->
+      <v-toolbar-title class="white--text" v-if="$root.user">Hello {{ $root.user.name }}</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn class="white--text" v-if="$root.user" flat to="/dashboard">
