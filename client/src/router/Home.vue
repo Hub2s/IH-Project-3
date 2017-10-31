@@ -1,6 +1,6 @@
 <template>
   <main>
-     <v-content>
+     <v-content class="hero">
        <section>
          <v-parallax :src="heroImg" height="600">
            <v-layout
@@ -15,7 +15,7 @@
                class="red lighten-2 mt-6"
                dark
                large
-               href="/pre-made-themes"
+               to="/jepostule"
              >
                Je Postule
              </v-btn>
@@ -63,7 +63,7 @@
                        <div class="headline">Une rapidité d'exécution</div>
                      </v-card-title>
                      <v-card-text>
-                       Comme dans tout projet entrepreneurial, il ne suffit pas d'avoir la bonne idée. L'idée est importante pour la motivation du porteur de projet mais sa rapidité d'exécution est d'autant plus cruciale pour rester meilleur que ses compétiteurs. Pour cela, l'intrapreuneur sera conseillé par les meilleurs.
+                       Comme dans tout projet entrepreneurial, il ne suffit pas d'avoir la bonne idée. L'idée est importante pour la motivation du porteur de projet mais sa rapidité d'exécution est d'autant plus cruciale pour rester meilleur que ses compétiteurs. Pour cela, l'intrapreuneur sera conseillé par une équipe solide.
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -169,7 +169,7 @@
 </template>
 
 <script>
-import heroImg from '@/assets/hero.jpeg'
+import heroImg from '@/assets/philipp.jpg'
 import sectionImg from '@/assets/section.jpeg'
 
 export default {
@@ -196,3 +196,11 @@ export default {
 //   },
 // }
 </script>
+
+<style>
+
+.hero {
+  padding: 0px !important;
+}
+
+</style>

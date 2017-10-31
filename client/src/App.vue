@@ -1,42 +1,40 @@
 <template>
   <v-app>
-    <v-toolbar fixed app>
-      <v-toolbar-title>Mon application</v-toolbar-title>
+    <v-toolbar class="grey darken-2" fixed app>
+      <!-- <v-toolbar-title>Demain PM</v-toolbar-title> -->
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn flat to="/dashboard">
+        <v-btn class="white--text" v-if="$root.user" flat to="/dashboard">
           Tableau de bord
         </v-btn>
-        <v-btn flat v-if="!$root.user" to="/login">
+        <v-btn class="white--text" flat v-if="!$root.user" to="/login">
           Login
         </v-btn>
-        <v-btn flat v-if="!$root.user" to="/signup">
+        <v-btn class="white--text" flat v-if="!$root.user" to="/signup">
           Signup
         </v-btn>
-        <v-btn flat @click.prevent="logout" v-if="$root.user">
+        <v-btn class="white--text" flat @click.prevent="logout" v-if="$root.user">
           Logout
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+
     <v-content>
       <v-container fluid>
         <router-view></router-view>
       </v-container>
     </v-content>
+
     <v-footer class="grey darken-2">
       <v-layout row wrap align-center>
-        <v-flex class="test" xs12>
-          <div class="white--text ml-3">
-            Fait avec
-            <v-icon class="red--text">favorite</v-icon>
-            par <a class="white--text" href="https://github.com/Hub2s">Hub2S</a>
-          </div>
-          <div class="white--text contactLink">
-            <a class="white--text" href="contact@demain.media">Contact</a>
-          </div>
-          <div class="white--text CGULink">
-            <a class="white--text" href="CGU.com">Conditions générales d'utilisation</a>
-          </div>
+        <!-- <v-flex xs12 sm4 class="white--text">
+          Fait par <a class="white--text" href="https://github.com/Hub2s">Hub2S</a>
+        </v-flex> -->
+        <v-flex xs12 sm6 class="white--text">
+          <a class="white--text" link href="http://www.prismamedia.com/conditions-generales-dutilisation/">Conditions générales d'utilisation</a>
+        </v-flex>
+        <v-flex xs12 sm6 class="white--text">
+          <a class="white--text" href="mailto:contact@demain.media">Contact</a>
         </v-flex>
       </v-layout>
     </v-footer>
@@ -57,14 +55,5 @@ export default {
 </script>
 
 <style>
-.test {
-  display: flex;
-  flex-direction: row;
-}
-.contactLink {
-  margin-left: 20%;
-}
-.contactCGU {
-  margin-left: 80%;
-}
+
 </style>
