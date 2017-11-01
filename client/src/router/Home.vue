@@ -2,15 +2,15 @@
   <main>
      <v-content class="hero">
        <section>
-         <v-parallax :src="heroImg" height="570">
+         <v-parallax :src="heroImg" height="700">
            <v-layout
              column
              align-center
              justify-center
              class="white--text"
            >
-             <img src="../assets/logo-demain.png" alt="Vuetify.js" height="350">
-             <h1 class="white--text mb-2 display-1 text-xs-center">Faisons des idées d'aujourd'hui, les media de demain</h1>
+             <img src="../assets/logoHD.png" alt="Vuetify.js" height="450">
+             <h1 class="black--text mb-3 display-1 text-xs-center">Faisons des idées d'aujourd'hui, les media de demain</h1>
              <v-btn
                class="red lighten-2 mt-6"
                dark
@@ -50,7 +50,7 @@
                        <div class="headline text-xs-center">Des idées prenantes</div>
                      </v-card-title>
                      <v-card-text>
-                       Les employés de Prisma Media se sont souvent démarqués grâce à leur créativité débordante. De nombreux projets ont été soulevés pendant Eurêka et des projets comme Infonity ont vu le jour. Depuis cet été, les idées affluent et Prisma Media a décidé de donner leur chance à certaines d'entre elles.
+                       <a class="black--text" link href="http://www.prismamediasolutions.com/qui-sommes-nous">Prisma Media</a>, qu'est-ce donc? Avant tout, près de 1400 employés qui font en sorte jour après jour d'avoir un media d'avance et de garder le leadership. Une créativité débordante, une rigueur de fer et un esprit de famille, de quoi donner naissance à de multiples projets, à Eurêka ou à Infonity. Et depuis cet été, les idées et affluent et...
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -63,7 +63,7 @@
                        <div class="headline">Une rapidité d'exécution</div>
                      </v-card-title>
                      <v-card-text>
-                       Comme dans tout projet entrepreneurial, il ne suffit pas d'avoir la bonne idée. L'idée est importante pour la motivation du porteur de projet mais sa rapidité d'exécution est d'autant plus cruciale pour rester meilleur que ses compétiteurs. Pour cela, l'intrapreuneur sera conseillé par une équipe solide.
+                       ... le Groupe a décidé de booster les idées de ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe de choc</a>.
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -76,8 +76,9 @@
                        <div class="headline text-xs-center">Un succès prouvé</div>
                      </v-card-title>
                      <v-card-text>
-                       En 1978, un as de l'exécution à la créativité débordante est venu s'installer en France, un Géo à la main.
-                       Il s'agit d'<a class="black--text" link href="https://fr.wikipedia.org/wiki/Axel_Ganz">Axel Ganz</a>, le fondateur de Prisma Media. 40 ans, son projet est encore un succès de plus de 1400 employés et leader de son secteur.
+                       En 1978, un as de l'exécution à la créativité débordante est arrivé en France, un Géo à la main.
+                       En quelques années, <a class="black--text" link href="https://fr.wikipedia.org/wiki/Axel_Ganz">Axel Ganz</a>, a fait de son projet intrapreneurial un Groupe de plus de 1400 employés, leader de son secteur avec près de 25 marques média.
+                       Gruner und Jahr a décidé d'investir en nous aujourd'hui comme il l'a fait il y a 40 ans pour Axel Ganz!
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -90,13 +91,13 @@
        <section>
          <v-parallax :src="sectionImg" height="800">
            <v-layout column align-center justify-center>
-             <div class="headline white--text mb-3 text-xs-center">Nous souhaitons vous accompagner dans votre démarche de créativité</div>
+             <div class="headline white--text mb-3 text-xs-center">Nous souhaitons délier votre créativité et</div>
              <em>Découvrez notre programme d'accompagnement</em>
              <v-btn
                class="red lighten-2 mt-5"
                dark
                large
-               href="/pre-made-themes"
+               href="/programme"
              >
                Le Programme
              </v-btn>
@@ -171,7 +172,7 @@
 </template>
 
 <script>
-import heroImg from '@/assets/philipp.jpg'
+import heroImg from '@/assets/philipp-transp.png'
 import sectionImg from '@/assets/hands.jpg'
 //https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Other%20Explore%20Photos/H-P/holi-hands.adapt.945.1.jpg
 

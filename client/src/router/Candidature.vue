@@ -131,23 +131,103 @@
        </v-container>
      </v-card-text>
     </v-card>
-    <h4>
-      Merci d’insérer le lien Vimeo ainsi que le mot de passe d’une vidéo de présentation de votre idée? (45 secondes max)
-    </h4>
+    <v-card color="grey lighten-4" flat>
+     <v-card-text>
+       <v-subheader>Avez-vous une équipe en tête?</v-subheader>
+       <v-container fluid>
+         <v-layout row>
+           <v-flex xs12>
+             <v-text-field
+               name="input-1"
+               placeholder=""
+               textarea
+             ></v-text-field>
+           </v-flex>
+         </v-layout>
+       </v-container>
+     </v-card-text>
+    </v-card>
     <h3>#3 Votre position actuelle au sein du groupe Prisma Media</h3>
-    <h4>
-      Dans quelle division êtes vous? (Feminin, Entertainment, Premium, Filiales)
-    </h4>
-    <h4>
-      Qui est votre supérieur? (Blanc)
-    </h4>
-    <h4>
-      Depuis combien de temps travaillez vous chez Prisma Media? (Blanc)
-    </h4>
-    <h4>
-      Quel type de contrat de travail? (CDI CDD)
-    </h4>
-
+    <v-container fluid>
+    <v-layout row wrap>
+     <v-flex xs12 md6>
+       <v-subheader>À quelle division êtes vous rattaché(e)?</v-subheader>
+       <v-card flat>
+         <v-card-text>
+           <v-radio-group v-model="ex8" :mandatory="false">
+             <v-radio label="Pôle Féminin" value="Pôle Féminin"></v-radio>
+             <v-radio label="Pôle Entertainment" value="Pôle Entertainment"></v-radio>
+             <v-radio label="Pôle Premium" value="Pôle Premium"></v-radio>
+             <v-radio label="Pôle Filiales" value="Pôle Filiales"></v-radio>
+             <v-radio label="Prisma Media Solutions" value="Prisma Media Solutions"></v-radio>
+             <v-radio label="Direction Technique" value="Direction Technique"></v-radio>
+             <v-radio label="Direction Financière et Opérationnelle" value="Direction Financière et Opérationnelle"></v-radio>
+             <v-radio label="Direction des Ressources Humaines" value="Direction des Ressources Humaines"></v-radio>
+             <v-radio label="Direction Générale" value="Direction Générale"></v-radio>
+           </v-radio-group>
+         </v-card-text>
+       </v-card>
+     </v-flex>
+    </v-layout>
+    </v-container>
+    <v-card color="grey lighten-4" flat>
+     <v-card-text>
+       <v-subheader>Qui est votre supérieur(e)?</v-subheader>
+       <v-container fluid>
+         <v-layout row>
+           <v-flex xs12>
+             <v-text-field
+               name="input-1"
+               placeholder=""
+               textarea
+             ></v-text-field>
+           </v-flex>
+         </v-layout>
+       </v-container>
+     </v-card-text>
+   </v-card>
+   <v-card color="grey lighten-4" flat>
+    <v-card-text>
+      <v-subheader>Depuis combien de temps travaillez vous chez Prisma Media?</v-subheader>
+      <v-container fluid>
+        <v-layout row>
+          <v-flex xs12>
+            <v-text-field
+              name="input-1"
+              placeholder=""
+              textarea
+            ></v-text-field>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-card-text>
+  </v-card>
+    <v-container fluid>
+   <v-layout row wrap>
+     <v-flex xs12 md6>
+       <v-subheader>Quel type de contrat de travail avez-vous?</v-subheader>
+       <v-card flat>
+         <v-card-text>
+           <v-radio-group v-model="ex8" :mandatory="false">
+             <v-radio label="Contrat à durée indéterminée (CDI)" value="Contrat à Durée Indéterminée"></v-radio>
+             <v-radio label="Contrat à durée déterminée (CDD)" value="Contrat à Durée Déterminée"></v-radio>
+             <v-radio label="Pigiste" value="Pigiste"></v-radio>
+             <v-radio label="Stage" value="Stage"></v-radio>
+           </v-radio-group>
+         </v-card-text>
+       </v-card>
+     </v-flex>
+   </v-layout>
+ </v-container>
+         <v-btn
+           class="red lighten-2 mt-6"
+           dark
+           justify-center
+           large
+           to="/"
+         >
+           J'envois ma candidature!
+         </v-btn>
   </div>
 </template>
 

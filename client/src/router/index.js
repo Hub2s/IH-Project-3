@@ -7,6 +7,8 @@ import Example from './Example';
 import Dashboard from './Dashboard';
 import { checkUser } from '@/api/auth';
 import Candidature from './Candidature';
+import Programme from './Programme';
+import Team from './Team';
 
 Vue.use(Router);
 
@@ -20,6 +22,20 @@ const router = new Router({
     {
       path: '/candidature',
       component: Candidature,
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
+      path: '/team',
+      component: Team,
+      meta: {
+        requiresAuth: true,
+      },
+    },
+    {
+      path: '/programme',
+      component: Programme,
       meta: {
         requiresAuth: true,
       },
