@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
@@ -6,12 +8,13 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const history = require('express-history-api-fallback')
 const passport = require('passport');
 const User = require('./models/user');
 const config = require('./config');
 const { Strategy, ExtractJwt } = require('passport-jwt');
 
-mongoose.connect('mongodb://localhost/blog-lab', { useMongoClient: true });
+mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true })
 
 const app = express();
 
@@ -72,6 +75,10 @@ app.get(
     res.json(req.user);
   }
 );
+
+const clientRoot = path.join(__dirname, '../client/dist');
+app.use('/', express.static(clientRoot))
+app.use(history('index.html', { root: clientRoot }))
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

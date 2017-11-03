@@ -37,7 +37,7 @@ const router = new Router({
       path: '/programme',
       component: Programme,
       meta: {
-        requiresAuth: true,
+        requiresAuth: false,
       },
     },
     {

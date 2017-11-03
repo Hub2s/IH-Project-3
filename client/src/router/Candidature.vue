@@ -1,15 +1,28 @@
 <template>
   <div>
-    <h1 class="black-text grey mb-2 text-xs-center">Formulaire de candidature</h1>
-    <h3>#1 L’Humain</h3>
+    <br>
+    <h1 class="red darken-4 mb-2 text-xs-center white--text">Formulaire de candidature</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="red darken-4 white--text">
+    <h4>#1 L’Humain</h4>
+    </div>
+    <br>
+    <br>
     <v-card color="grey lighten-4" flat>
      <v-card-text>
-       <v-subheader>Donnez un exemple de quelque chose que vous avez fait, créé ou auquel vous avez contribué qui montre vos compétences exceptionnelles. <br>(quelque chose que la plupart de vos pairs ne pourraient pas faire, ou n'auraient pas fait)</v-subheader>
+       <v-subheader>Donnez un exemple de quelque chose que vous avez fait, créé ou auquel vous avez contribué qui montre vos compétences singulières. <br>(quelque chose que la plupart de vos pairs ne pourraient pas faire, ou n'auraient pas fait)</v-subheader>
        <v-container fluid>
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-1"
                placeholder="Les exemples peuvent être tout aussi bien être des projets professionnels au sein de Prisma Media ou auprès de vos anciens employeurs, de projets personnels ou associatifs. N'hésitez pas à inclure les prix ou les bourses que vous avez gagnés. Indiquez les URL pertinentes et le contact pertinent pour une recommandation sur votre niveau de contribution."
                textarea
              ></v-text-field>
@@ -25,7 +38,7 @@
         <v-layout row>
           <v-flex xs12>
             <v-text-field
-              name="input-1"
+              name="question-2"
               placeholder="N'hésitez pas à développer votre exemple précédent ou à utiliser un nouvel exemple. 🕵️"
               textarea
             ></v-text-field>
@@ -41,7 +54,7 @@
        <v-layout row>
          <v-flex xs12>
            <v-text-field
-             name="input-1"
+             name="question-3"
              placeholder="Si vous avez un nouvel exemple de votre créativité ou de vos capacités managériales, n’hésitez pas à partager ici. "
              textarea
            ></v-text-field>
@@ -57,7 +70,7 @@
           <v-layout row>
             <v-flex xs12>
               <v-text-field
-                name="input-1"
+                name="question-4"
                 placeholder="Décrivez le rôle dans lequel vous pensez exceller et pourquoi. 💃🕺"
                 textarea
               ></v-text-field>
@@ -73,7 +86,7 @@
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-5"
                placeholder="Utilisez votre connaissance d'un domaine en particulier pour partager un «secret» que vous avez - le plus surprenant vous serez, le plus de chance vous aurez d’être sélectionné! 😎"
                textarea
              ></v-text-field>
@@ -89,7 +102,7 @@
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-6"
                placeholder="Impressionnez nous 🚀🚀🚀"
                textarea
              ></v-text-field>
@@ -98,7 +111,13 @@
        </v-container>
      </v-card-text>
     </v-card>
-    <h3>#2 Votre projet</h3>
+    <br>
+    <br>
+    <div class="red darken-4 white--text">
+    <h4>#2 Votre projet</h4>
+    </div>
+    <br>
+    <br>
     <v-card color="grey lighten-4" flat>
      <v-card-text>
        <v-subheader>Quel est votre projet?</v-subheader>
@@ -106,7 +125,7 @@
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-7"
                placeholder="500 mots pour décrire une solution qui répond à une problème."
                textarea
              ></v-text-field>
@@ -122,7 +141,7 @@
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-8"
                placeholder=""
                textarea
              ></v-text-field>
@@ -138,7 +157,7 @@
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-9"
                placeholder=""
                textarea
              ></v-text-field>
@@ -147,7 +166,13 @@
        </v-container>
      </v-card-text>
     </v-card>
-    <h3>#3 Votre position actuelle au sein du groupe Prisma Media</h3>
+    <br>
+    <br>
+    <div class="red darken-4 white--text">
+    <h4>#3 Votre position actuelle au sein du groupe Prisma Media</h4>
+    </div>
+    <br>
+    <br>
     <v-container fluid>
     <v-layout row wrap>
      <v-flex xs12 md6>
@@ -177,7 +202,7 @@
          <v-layout row>
            <v-flex xs12>
              <v-text-field
-               name="input-1"
+               name="question-10"
                placeholder=""
                textarea
              ></v-text-field>
@@ -193,7 +218,7 @@
         <v-layout row>
           <v-flex xs12>
             <v-text-field
-              name="input-1"
+              name="question-11"
               placeholder=""
               textarea
             ></v-text-field>
@@ -219,15 +244,28 @@
      </v-flex>
    </v-layout>
  </v-container>
+ <br>
+ <br>
+ <br>
+ <br>
+      <v-flex class="text-xs-center">
          <v-btn
-           class="red lighten-2 mt-6"
+           class="red darken-4 mt-6"
            dark
            justify-center
            large
            to="/"
-         >
-           J'envois ma candidature!
+           >J'envois ma candidature!
          </v-btn>
+      </v-flex>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   </div>
 </template>
 
@@ -237,3 +275,7 @@ export default {
   },
 };
 </script>
+
+<style media="h3">
+  color: red
+</style>

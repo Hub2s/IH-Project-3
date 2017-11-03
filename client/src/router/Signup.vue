@@ -1,12 +1,12 @@
 <template>
-<div>
+<div class="test">
   <v-alert color="error" dismissible v-if="error">
     {{ error.message }}
   </v-alert>
   <v-form @submit.prevent="signup">
     <v-text-field
       label="Nom"
-      v-model="Nom"
+      v-model="name"
       required
     ></v-text-field>
     <v-text-field
@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+.test {
+  background-image:url("../assets/logoHD.png");
+}
   form {
     max-width: 400px;
     margin: auto;

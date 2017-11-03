@@ -63,7 +63,7 @@
                        <div class="headline">Une rapidité d'exécution</div>
                      </v-card-title>
                      <v-card-text>
-                       ... le Groupe a décidé de booster les idées de ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe de choc</a>.
+                       ... le Groupe a décidé de les booster en supportant ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe de choc</a>.
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -89,9 +89,9 @@
        </section>
 
        <section>
-         <v-parallax :src="sectionImg" height="800">
+         <v-parallax :src="sectionImg" height="400">
            <v-layout column align-center justify-center>
-             <div class="headline white--text mb-3 text-xs-center">Nous souhaitons délier votre créativité et</div>
+             <div class="headline white--text mb-3 text-xs-center">Nous souhaitons délier votre créativité et la soutenir</div>
              <em>Découvrez notre programme d'accompagnement</em>
              <v-btn
                class="red lighten-2 mt-5"
@@ -184,21 +184,6 @@ export default {
     }
   }
 }
-// import IntroductionPart from "@/components/IntroductionPart";
-// import Intrapreneuriat from "@/components/Intrapreneuriat";
-// import LeProgramme from "@/components/LeProgramme";
-// import LEquipe from "@/components/LEquipe";
-// import JePostule from "@/components/JePostule";
-//
-// export default {
-//   components: {
-//     IntroductionPart,
-//     Intrapreneuriat,
-//     LeProgramme,
-//     LEquipe,
-//     JePostule
-//   },
-// }
 </script>
 
 <style>
