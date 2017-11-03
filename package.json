@@ -1,0 +1,21 @@
+{
+  "name": "IH-Project-3",
+  "version": "1.0.0",
+  "description": "IronHack Project #3",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd server && npm install",
+    "start": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hub2s/IH-Project-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hub2s/IH-Project-3/issues"
+  },
+  "homepage": "https://github.com/Hub2s/IH-Project-3#readme"
+}
