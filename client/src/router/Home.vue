@@ -63,7 +63,7 @@
                        <div class="headline">Une rapidité d'exécution</div>
                      </v-card-title>
                      <v-card-text>
-                       ... le Groupe a décidé de les booster en supportant ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe de choc</a>.
+                       ... le Groupe a décidé de les booster en supportant ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe dédiée</a>.
                      </v-card-text>
                    </v-card>
                  </v-flex>
