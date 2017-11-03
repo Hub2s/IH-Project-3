@@ -4,9 +4,9 @@
       <v-toolbar-title class="white--text" v-if="$root.user">Hello {{ $root.user.name }}</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn class="white--text" v-if="$root.user" flat to="/dashboard">
+        <!-- <v-btn class="white--text" v-if="$root.user" flat to="/dashboard">
           Tableau de bord
-        </v-btn>
+        </v-btn> -->
         <v-btn class="white--text" flat v-if="!$root.user" to="/login">
           Login
         </v-btn>

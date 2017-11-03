@@ -11,7 +11,7 @@ import Programme from './Programme';
 import Team from './Team';
 
 Vue.use(Router);
-
+//hello
 const router = new Router({
   mode: 'history',
   routes: [
