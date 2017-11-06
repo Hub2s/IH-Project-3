@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     This is the dashboard
     <pre>{{ $root.user }}</pre>
@@ -8,4 +8,4 @@
 <script>
 export default {
 }
-</script>
+</script> -->

@@ -30,7 +30,7 @@ const router = new Router({
       path: '/team',
       component: Team,
       meta: {
-        requiresAuth: true,
+        requiresAuth: false,
       },
     },
     {
