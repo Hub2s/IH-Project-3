@@ -1,8 +1,8 @@
 <template>
   <main>
-     <v-content class="travaux">
+     <v-content class="leprogramme">
        <section>
-         <v-parallax :src="travaux" height="500">
+         <v-parallax :src="leprogramme" height="590">
            <v-layout
              column
              align-center
@@ -18,12 +18,12 @@
 </template>
 
 <script>
-import travaux from '@/assets/travaux.png'
+import leprogramme from '@/assets/leprogramme.png'
 
 export default {
   data() {
     return {
-      travaux
+      leprogramme
     }
   }
 }
@@ -31,8 +31,8 @@ export default {
 
 <style>
 
-.travaux {
-  padding: 0px !important;
+.leprogramme {
+  padding: 30px !important;
 }
 
 </style>

@@ -2,7 +2,7 @@
   <main>
      <v-content class="hero">
        <section>
-         <v-parallax :src="heroImg" height="700">
+         <v-parallax :src="heroImg" height="600">
            <v-layout
              column
              align-center
@@ -10,15 +10,15 @@
              class="white--text"
            >
              <img src="../assets/logoHD.png" alt="Vuetify.js" height="450">
-             <h1 class="black--text mb-3 display-1 text-xs-center">Faisons des idées d'aujourd'hui, les media de demain</h1>
-             <v-btn
+             <h1 class="black--text mb-3 display-1 text-xs-top">Faisons des idées d'aujourd'hui, les media de demain</h1>
+             <!-- <v-btn
                class="red lighten-2 mt-6"
                dark
                large
-               to="/candidature"
+               to="/programme"
              >
-               Je Postule
-             </v-btn>
+               Le Programme
+             </v-btn> -->
            </v-layout>
          </v-parallax>
        </section>
@@ -32,10 +32,10 @@
          >
            <v-flex xs12 sm4 class="my-3">
              <div class="text-xs-center">
-               <h2 class="headline">L'INTRAPRENEURIAT</h2>
-               <span class="subheading">
+               <h2 class="headline">Prisma Media et l'intrapreneuriat</h2>
+               <!-- <span class="subheading">
                  Une approche intellectuelle et professionnelle passionnante
-               </span>
+               </span> -->
              </div>
            </v-flex>
            <v-flex xs12>
@@ -50,7 +50,7 @@
                        <div class="headline text-xs-center">Des idées prenantes</div>
                      </v-card-title>
                      <v-card-text>
-                       <a class="black--text" link href="http://www.prismamediasolutions.com/qui-sommes-nous">Prisma Media</a>, qu'est-ce donc? Avant tout, près de 1400 employés qui font en sorte jour après jour d'avoir un media d'avance et de garder le leadership. Une créativité débordante, une rigueur de fer et un esprit de famille, de quoi donner naissance à de multiples projets, à Eurêka ou à Infonity. Et depuis cet été, les idées et affluent et...
+                       <a class="black--text" link href="http://www.prismamediasolutions.com/qui-sommes-nous">Prisma Media</a>, c'est avant tout près de 1400 employés qui servent chaque jour leurs auditeurs grâce à leur media d'avance. Une créativité débordante, une rigueur de fer et un esprit de famille, de quoi donner naissance à de multiples projets. Depuis les projets Eurêka et Infonity, les idées n'ont cessé d'affluer et...
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -63,7 +63,7 @@
                        <div class="headline">Une rapidité d'exécution</div>
                      </v-card-title>
                      <v-card-text>
-                       ... le Groupe a décidé de les booster en supportant ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe dédiée</a>.
+                       ... le Groupe a décidé de les soutenir en supportant ses collaborateurs. Cependant, il ne suffit pas d'avoir LA bonne idée. C'est important pour la motivation mais la rapidité d'exécution est cruciale! Il faut en effet rester meilleur que ses compétiteurs et pour cela, les intrapreuneurs lauréats seront conseillés par une <a class="black--text" link href="/Team">équipe dédiée</a>.
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -77,8 +77,8 @@
                      </v-card-title>
                      <v-card-text>
                        En 1978, un as de l'exécution à la créativité débordante est arrivé en France, un Géo à la main.
-                       En quelques années, <a class="black--text" link href="https://fr.wikipedia.org/wiki/Axel_Ganz">Axel Ganz</a>, a fait de son projet intrapreneurial un Groupe de plus de 1400 employés, leader de son secteur avec près de 25 marques média.
-                       Gruner und Jahr a décidé d'investir en nous aujourd'hui comme il l'a fait il y a 40 ans pour Axel Ganz!
+                       En quelques années, <a class="black--text" link href="https://fr.wikipedia.org/wiki/Axel_Ganz">Axel Ganz</a>, a fait de son projet intrapreneurial un Groupe de plus de 1400 employés, leader bi-media avec près de 25 marques.
+                       Gruner und Jahr a décidé d'investir dans les idées de ses collaborateurs Français comme il l'a fait il y a 40 ans pour Axel Ganz!
                      </v-card-text>
                    </v-card>
                  </v-flex>
@@ -111,7 +111,7 @@
              <v-flex xs12 sm4>
                <v-card class="elevation-0 transparent">
                  <v-card-title primary-title class="layout justify-center">
-                   <div class="headline">Je suis Employé</div>
+                   <div class="headline">Je fais partie du Groupe</div>
                  </v-card-title>
                  <v-card-text>
                    Le programme est ouvert à tous les employés du Groupe Prisma Media et de ses filiales en France et à l'étranger.

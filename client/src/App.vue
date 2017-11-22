@@ -54,6 +54,23 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+ <style>
+.application {
+  background: none;
+  position: relative;
+}
+.application::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-image: url('./assets/demain_logo_notxt.png');
+   background-repeat: no-repeat;
+   background-position: 70vh bottom;
+   opacity: 0.1;
+   z-index: -1;
+ }
+ </style>
